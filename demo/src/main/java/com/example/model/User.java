@@ -7,6 +7,9 @@ import io.micronaut.serde.annotation.Serdeable;
 @Serdeable
 public class User {
     private int id;
+    private String name;
+    private String contact;
+    private String email;
 
     public User(int id, String name, String contact, String email) {
         this.id = id;
@@ -14,10 +17,6 @@ public class User {
         this.contact = contact;
         this.email = email;
     }
-
-    private String name;
-    private String contact;
-    private String email;
 
     public int getId() {
         return id;

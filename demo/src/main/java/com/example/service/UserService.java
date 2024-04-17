@@ -1,5 +1,6 @@
 package com.example.service;
 
+import com.example.exception.UserNotFoundException;
 import com.example.model.User;
 import jakarta.inject.Singleton;
 
@@ -24,7 +25,7 @@ public class UserService {
         return this.users.stream()
                 .filter(user -> user.getId() == userId)
                 .findFirst()
-                .orElse(null);
+                .orElseThrow(() -> new UserNotFoundException());
     }
 
     private int getPosition(int userId) {
