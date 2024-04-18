@@ -1,0 +1,17 @@
+micronaut:
+  application:
+    name: UserService
+datasources:
+  default:
+    url: jdbc:mysql://localhost:3306/micronaut-database?allowPublicKeyRetrieval=true
+    username: root
+    password: emon@123
+    schema-generate: CREATE_DROP
+    dialect: MYSQL
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
