@@ -21,4 +21,9 @@
 
 - [Micronaut Serialization Jackson Core documentation](https://micronaut-projects.github.io/micronaut-serialization/latest/guide/)
 
-
+## Database Integration in Micronaut
+- For using database in micronaut we need to add <micronaut.data.version> version <micronaut.data.version> in properties in pom.xml
+- Then add path processor in pom.xml under annotationProcessorPath
+- Micronaut Data is Database Access ToolKit which helps as to work with database.
+- We will work with mysql database.
+- docker-compose.yml contains the necessary information to run mysql in docker.
